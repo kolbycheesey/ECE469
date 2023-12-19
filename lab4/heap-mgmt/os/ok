@@ -1,0 +1,79 @@
+43,44d42
+< int referenceCounter[MEM_PT_SIZE];
+< 
+449c447
+<   //referenceCounter[userStackPage] = 1;
+---
+> 
+454d451
+<   //referenceCounter[sysStackPage] = 1;
+463d459
+<     //referenceCounter[codePage] = 1;
+528,537d523
+<   intrs = DisableIntrs ();
+<   if ((pcb->l = AQueueAllocLink(pcb)) == NULL) {
+<     printf("FATAL ERROR: could not get link for forked PCB in ProcessFork!\n");
+<     exitsim();
+<   }
+<   if (AQueueInsertLast(&runQueue, pcb->l) != QUEUE_SUCCESS) {
+<     printf("FATAL ERROR: could not insert link into runQueue in ProcessFork!\n");
+<     exitsim();
+<   }
+<   RestoreIntrs (intrs);
+663,718d648
+< 
+< //fork implementation
+< /*void ProcessRealFork() {
+<   PCB *childPCB;
+<   int i;
+<   int pcb_counter = 0;
+<   int intrs;               // Stores previous interrupt settings.
+<   uint32 childSysStackPage;
+<   
+<   dbprintf('f', "Entered fork\n");
+<   intrs = DisableIntrs ();
+<   dbprintf ('I', "Old interrupt value was 0x%x.\n", intrs);
+<   // Get a free PCB for the new process
+<   if (AQueueEmpty(&freepcbs)) {
+<     printf ("FATAL error: no free processes!\n");
+<     exitsim ();	// NEVER RETURNS!
+<   }
+<   childPCB = (PCB *)AQueueObject(AQueueFirst (&freepcbs));
+<   dbprintf ('p', "Got a link @ 0x%x\n", (int)(childPCB->l));
+<   if (AQueueRemove (&(childPCB->l)) != QUEUE_SUCCESS) {
+<     printf("FATAL ERROR: could not remove link from freepcbsQueue in ProcessFork!\n");
+<     exitsim();
+<   }
+<   //copy current pcb to child pcb using bcopy
+<   bcopy((char *)currentPCB, (char *)childPCB, sizeof(currentPCB));
+<   //childPCB->pagetable = currentPCB->pagetable; //set childpcb pagetable to point to parent pagetable
+<   //mark as valid bits as readonly
+<   for (i = 0; i < MEM_PT_SIZE; i++) {
+<     if (pcb_counter >= childPCB->npages) break; //break if exceeded number of pages for process to maximize efficiency
+<     if ((childPCB->pagetable[i] & 0x7) == 1) {
+<       childPCB->pagetable[i] |= MEM_PTE_READONLY;
+<       referenceCounter[MemoryGetPageNumber(childPCB->pagetable[i])]++;
+<       pcb_counter++;
+<     }
+<   }
+< 
+<   //allocate new page for child system stack
+<   childSysStackPage = MemoryAllocPage();
+<   childPCB->sysStackArea = MemorySetupPte(childSysStackPage) &~0x7;
+<   bcopy((char *)currentPCB->sysStackArea, (char *)childPCB->sysStackArea, MEM_PAGESIZE);
+<   childPCB->sysStackPtr = (uint32 *)(childPCB->sysStackArea | MemoryGetOffset((uint32)currentPCB->sysStackPtr));
+<   childPCB->currentSavedFrame = childPCB->sysStackPtr;
+<   intrs = DisableIntrs ();
+< 
+<   //insert childPCB onto the runQueue
+<   if ((childPCB->l = AQueueAllocLink(childPCB)) == NULL) {
+<     printf("FATAL ERROR: could not get link for forked PCB in ProcessFork!\n");
+<     exitsim();
+<   }
+<   if (AQueueInsertLast(&runQueue, childPCB->l) != QUEUE_SUCCESS) {
+<     printf("FATAL ERROR: could not insert link into runQueue in ProcessFork!\n");
+<     exitsim();
+<   }
+<   RestoreIntrs (intrs);
+<   dbprintf('f', "Exiting fork\n");
+< }*/

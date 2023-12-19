@@ -1,0 +1,4 @@
+Just add PROCESS_QUANTUM_JIFFIES to whatever is at the front of the runqueue?
+loop through pcb array and print whichever processes have pinfo set to 1
+set pinfo of newly created pcb in process_fork to the pinfo arg
+trivial??????

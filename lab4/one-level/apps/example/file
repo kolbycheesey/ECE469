@@ -1,0 +1,178 @@
+cd ../../bin; dlxsim -x os.dlx.obj -a -u makeprocs.dlx.obj 5; ee469_fixterminal
+Stack=0x1fffc8, pc starting at 0x11c54
+Got 3 arguments.
+Available memory: 0x213d0 -> 0x200000.
+Argument count is 3.
+Argument 0 is -u.
+Argument 1 is makeprocs.dlx.obj.
+Argument 2 is 5.
+PID(30)
+spawn_me.dlx.obj 1 0 
+Hello World: PID(30)
+PID(29)
+spawn_me.dlx.obj 3 0 
+case 3
+Page fault
+Segmentation fault (core dumped)
+0x1d134
+Page fault
+Segmentation fault (core dumped)
+0x1cccc
+PID(27)
+spawn_me.dlx.obj PID(26)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(25)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(24)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(23)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(22)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(21)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+5 0 
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+PID(20)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(19)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(18)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(17)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(16)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(15)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(14)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(13)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(12)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(11)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+PID(10)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(9)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(8)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(7)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(6)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(5)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(4)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(3)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(2)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(1)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+Hello World: PID(27)
+PID(0)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(30)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(29)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(28)
+spawn_me.dlx.obj 6 0 
+Message 
+Message 2
+PID(26)
+spawn_me.dlx.obj 2 0 
+Exiting after illegal access at iar=0x1258, isr=0x100
+Exiting at program request.
+Instructions executed: 112423236
+Time simulated: 112.423 secs
+Real time elapsed: 6.013 secs
+Execution rate: 18.70M simulated instructions per real second.

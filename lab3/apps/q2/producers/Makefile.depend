@@ -1,0 +1,2 @@
+work/producers.o: producers.c ../../../include/usertraps.h \
+ ../../../include/misc.h

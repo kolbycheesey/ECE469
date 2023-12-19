@@ -1,0 +1,48 @@
+constants
+P_SIZE = 1 << 12 #4 KB (memory_constants.h)
+VMEM_SIZE = 1 << 20 #1024 KB (memory_constants.h)
+PTSIZE = PMEM_SIZE / P_SIZE (memory_constants.h)
+MEM_L1FIELD_FIRST_BIT_NUM = 12
+MAX_VIRTUAL_ADDRESS = 0xfffff (memory_constants.h)
+MEM_MAX_SIZE = 1 << 22 #4 MB (memory_constants.h)
+MEM_PTE_READONLY = 0x4 (memory_constants.h)
+MEM_PTE_DIRTY = 0x2 (memory_constants.h)
+MEM_PTE_VALID = 0x1 (memory_constants.h)
+#extern int lastosaddress (memory_constants.h)
+
+implementation
+
+MemoryModuleInit()
+    mark os memory as taken for the free map
+        mark pages up to lastosaddress as 1 and rest as 0
+
+MemoryTranslateUserToSystem(PCB *pcb, uint32 addr)
+    find the page number by finding virtual page address >> MEM_L1FIELD_FIRST_NUM_BIT_NUM
+    index pcbs page table, and check if the valid bit is set, if not invoke a page fault, otherwise begin translation
+    translation:
+        or the offset with the corresponding page table entry.
+
+MemorySetupPte(uint32 page)
+
+Questions to ask in OH tmrw:
+Accessing 0x10d4 causes a page fault (seg fault), instruction memory probably not being mapped correctly to physical memory
+Go test the test program first
+
+
+
+having issues getting this working on my machine getting this error think its another bin file issue
+
+Last text address: 0x11b58
+Last data address: 0x2137c
+cp work/os.dlx.obj ../bin/os.dlx.obj
+gcc-dlx -mtraps -Wall -I../include -I../include/os -c -o work/usertraps.aso usertraps.s
+cp work/usertraps.aso ../lib/usertraps.aso
+cp: cannot create regular file ‘../lib/usertraps.aso’: No such file or directory
+
+
+Is the hello world program called 100 times for test case 5 or is the print statement called in a loop 100 times?
+
+Program is called 100 times
+
+
+

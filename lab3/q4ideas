@@ -1,0 +1,59 @@
+bsd 4.4 algo to do
+
+things to add in process.h
+add priority to pcb struct
+estcpu - estimated cpu usage per process, add to pcb struct
+pnice is a value from 0 to 20
+
+PRIORITIES_PER_QUEUE=4
+BASE_PRIORITY=50
+
+things to add in process.c
+runqueue array of size 32, where each queue holds 4 elements
+initialize queue array with queue of size 4
+
+functions
+ProcessRecalcPriority
+
+if (process has used an entire window of CPU time) estcpu++;  
+priority = BASE_PRIORITY + estcpu/4 + 2*pnice;      (1)
+
+whichQueue
+  queue = pcb->priority / PRIOTIRES_PER_QUEUE
+
+ProcessInsertRunning return false or true based on whether you can insert into the queue or not
+first calculate the processes "inner" priority within that queue by doing pcb->priority % BASE_PRIORITY
+insert the process into the corresponding "inner" priority queue
+
+ProcessDecayEstcpu
+
+processdecayestcpusleep  
+if (sleeptime >= 10 process quanta (0.1 second, 100 jiffies)) {
+    int num_windows_asleep = sleeptime / (TIME_PER_CPU_WINDOW * CPU_WINDOWS_BETWEEN_DECAYS);
+      estcpu = estcpu * [ (2*load)/(2*load+1) ] ^ (num_windows_asleep);
+}
+
+processfindhighestpriority
+  queue = runqueues[BASE_PRIORITY / PRIORITIES_PER_QUEUE)
+  linear search that queue to find the right process with the right priority
+
+
+ProcessFixRunQueues()
+temp queue
+for i in runqueues
+  for j in i
+    for l in j
+      processrecalc priority
+      remove from queue
+      put in temp queue
+
+using the temp queue we put each node back into the runqueues
+while (temp != empty)
+  pcb = remove(temp)
+  processinsertrunning(pcb)
+
+ProcessPrintRunqueues    
+for i in runqueues
+  for j in i
+    for l in j
+      print general process info such as process name, pid, pinfo, pnice 

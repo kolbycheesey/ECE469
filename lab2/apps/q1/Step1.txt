@@ -1,0 +1,29 @@
+1. How many semaphores are there in DLXOS?
+  There are 32 available semaphores allowed in the system according to line 23
+  in synch.h
+
+2. How many locks are there available in DLXOS?
+  There are 64 locks allowed in DLXOS according to line 24 in synch.h
+
+3. How is a semaphore created in DLXOS?
+  According to the SemCreate function in synch.c. The function will loop
+  through all available semaphores, and will check to see the first unused
+  semaphore. It will then initiate then initiate the semaphore with a certain
+  count.
+
+4. Explain how sem_signal and sem_wait work.
+  * SemSignal will increment the semaphore, if it is greater than 0, that means
+    the os can take the first process from the waiting queue and extract it
+    to the pcb, it will then wake up the process using processwakeup. 
+  * SemWait will wait on a semaphore. The calling process will be put 
+    to sleep by being inserted into the semaphore's wait queue. Interrupts are
+    turned off before putting to sleep.
+
+5. What is a handle and how is it used to access semaphores in DLXOS?
+  A handle is a number that represents a certain memory space or a shared
+  object inside the operating system. It can be passed into multiple processes that wish to use
+  the same memory space. In the context of semaphores, since there are 32
+  semaphores stored in an array in DLXOS, the handler can be used to index
+  that array to choose which semaphore to use.
+
+  

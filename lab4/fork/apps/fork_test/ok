@@ -1,0 +1,219 @@
+cd ../../bin; dlxsim -D t -x os.dlx.obj -a -u userprog.dlx.obj 1 3; ee469_fixterminal
+setting debug flag t
+Stack=0x1fffc0, pc starting at 0x12c60
+Got a trap, inst=44002001, vector=2001
+Got 4 arguments.
+Got a trap, inst=44002001, vector=2001
+Available memory: 0x22920 -> 0x200000.
+Got a trap, inst=44002001, vector=2001
+Argument count is 4.
+Got a trap, inst=44002001, vector=2001
+Argument 0 is -u.
+Got a trap, inst=44002001, vector=2001
+Argument 1 is userprog.dlx.obj.
+Got a trap, inst=44002001, vector=2001
+Argument 2 is 1.
+Got a trap, inst=44002001, vector=2001
+Argument 3 is 3.
+Got a trap, inst=44002013, vector=2013
+Got a trap, inst=44002013, vector=2013
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002012, vector=2012
+Got a trap, inst=44002010, vector=2010
+Got a trap, inst=44002014, vector=2014
+Got a trap, inst=44000430, vector=430
+Exception being done (cause=0x8000430 @ pc=0x1184).
+Got a trap, inst=44002001, vector=2001
+IAR child: 1184 parent: 1184
+Timer interrupt at PC=0x1184, t=2962147us, intr@2900177us
+Exception being done (cause=0x40 @ pc=0x1184).
+Got a trap, inst=44000431, vector=431
+Exception being done (cause=0x8000431 @ pc=0x1190).
+Got a trap, inst=44000201, vector=201
+Exception being done (cause=0x8000201 @ pc=0x1178).
+Got a trap, inst=44002001, vector=2001
+Hello world 31
+Timer interrupt at PC=0x1178, t=2972439us, intr@2963407us
+Exception being done (cause=0x40 @ pc=0x1178).
+Got a trap, inst=44000500, vector=500
+Exception being done (cause=0x8000500 @ pc=0x128c).
+Got a trap, inst=44002001, vector=2001
+Got an exit trap!
+Got a trap, inst=44002001, vector=2001
+30
+Got a trap, inst=44002001, vector=2001
+IAR child: 1184
+Timer interrupt at PC=0x1184, t=2981550us, intr@2973699us
+Exception being done (cause=0x40 @ pc=0x1184).
+Exception being done (cause=0x1 @ pc=0x0).
+Got a trap, inst=44002001, vector=2001
+Exiting after illegal instruction at iar=0x0, isr=0x0
+Got a trap, inst=44002f00, vector=2f00
+Exiting at program request.
+Instructions executed: 2982195
+Time simulated: 2.982 secs
+Real time elapsed: 0.385 secs
+Execution rate: 7.74M simulated instructions per real second.

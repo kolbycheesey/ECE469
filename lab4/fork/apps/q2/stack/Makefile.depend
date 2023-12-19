@@ -1,0 +1,1 @@
+work/stack.o: stack.c ../../../include/usertraps.h ../../../include/misc.h

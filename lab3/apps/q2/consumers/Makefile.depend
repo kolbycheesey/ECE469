@@ -1,0 +1,2 @@
+work/consumers.o: consumers.c ../../../include/usertraps.h \
+ ../../../include/misc.h

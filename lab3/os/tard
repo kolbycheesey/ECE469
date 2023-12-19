@@ -1,0 +1,99 @@
+mbox.c:      dbprintf('b', "%d\n", m);
+mbox.c:    dbprintf('b', "handle too big %d\n", handle);
+mbox.c:    dbprintf('b', "Process pid %d\n", mboxes[handle].processes[i]);
+mbox.c:  dbprintf('b', "\n");
+mbox.c:    dbprintf('b', "Iterated through all mail boxes\n");
+mbox.c:  dbprintf('b', "Sending\n");
+mbox.c:  dbprintf('b', "handle %d\n", handle);
+mbox.c:    dbprintf('b', "Queue full! lock acquired, Sem: %d\n", mboxes[handle].sem);
+mbox.c:  dbprintf('b', "link inserted address %p\n", l);
+mbox.c:    //dbprintf('b', "Sem released LOCK: %d\n", mboxes[handle].lock);
+mbox.c:  dbprintf('b', "Receiving\n");
+mbox.c:  dbprintf('b', "handle %d\n", handle);
+mbox.c:    //dbprintf('b', "Queue empty! lock acquired LOCK: %d\n", mboxes[handle].lock);
+mbox.c:  dbprintf('b', "Link removed address %p\n", l);
+mbox.c:    dbprintf('b', "Queue empty\n");
+mbox.c:  //  dbprintf('b', "Lock released PID: %d, LOCK: %d\n", GetCurrentPid(), mboxes[handle].lock); 
+mbox.c:        dbprintf('b', "Attempting to close mailbox at pid %d\n", pid);
+clock.c:  dbprintf('c', "ClkStart: clock started\n");
+clock.c:      dbprintf('c', "ClkInterrupt: calling ProcessSchedule\n");
+filesys.c:  dbprintf ('f', "Attepmting to open %s mode=%d.\n", name, mode);
+filesys.c:  dbprintf ('f', "File %s opening in file system %d.\n",name,openfiles[i].fs);
+filesys.c:  dbprintf ('f', "Opened %s in FS %d, mode=%d slot=%d.\n", name,
+filesys.c:  dbprintf ('f', "Attempting to open file %s into desc %d, mode %d.\n",
+memory.c:  dbprintf ('m', "Set freemap entry %d to 0x%x.\n",
+memory.c:  dbprintf ('m', "Map has %d entries, memory size is 0x%x.\n",
+memory.c:  dbprintf ('m', "Free pages start with page # 0x%x.\n", pagestart);
+memory.c:  dbprintf ('m', "Initialized %d free pages.\n", nfreepages);
+memory.c:  dbprintf ('m', "Allocating memory, starting with page %d\n", mapnum);
+memory.c:  dbprintf ('m', "Allocated memory, from map %d, page %d, map=0x%x.\n",
+memory.c:  dbprintf ('m',"Freed page 0x%x, %d remaining.\n", page, nfreepages);
+memory.c:  dbprintf ('m', "Operand for instruction %08x is 0x%x (reg=<%d,0x%x>)\n",
+process.c:  dbprintf ('p', "ProcessModuleInit: function started\n");
+process.c:    dbprintf ('p', "Initializing PCB %d @ 0x%x.\n", i, (int)&(pcbs[i]));
+process.c:  dbprintf ('p', "ProcessModuleInit: function complete\n");
+process.c:  dbprintf ('p', "ProcessFreeResources: function started\n");
+process.c:  dbprintf ('p', "ProcessFreeResources: function complete\n");
+process.c:  dbprintf ('p', "Now entering ProcessSchedule (cur=0x%x, %d ready)\n",
+process.c:  dbprintf ('p',"About to switch to PCB 0x%x,flags=0x%x @ 0x%x\n",
+process.c:    dbprintf ('p', "Freeing zombie PCB 0x%x.\n", (int)pcb);
+process.c:  dbprintf ('p', "Leaving ProcessSchedule (cur=0x%x)\n", (int)currentPCB);
+process.c:  dbprintf ('p', "ProcessSuspend (%d): function started\n", GetCurrentPid());
+process.c:  dbprintf ('p', "ProcessSuspend (%d): function complete\n", GetCurrentPid());
+process.c:  dbprintf ('p',"Waking up PID %d.\n", (int)(wakeup - pcbs));
+process.c:  dbprintf ('p', "ProcessDestroy (%d): function started\n", GetCurrentPid());
+process.c:  dbprintf ('p', "ProcessDestroy (%d): function complete\n", GetCurrentPid());
+process.c:  dbprintf ('p', "ProcessFork (%d): function started\n", GetCurrentPid());
+process.c:  dbprintf ('I', "Old interrupt value was 0x%x.\n", intrs);
+process.c:  dbprintf ('p', "Entering ProcessFork args=0x%x 0x%x %s %d\n", (int)func,
+process.c:  dbprintf ('p', "Got a link @ 0x%x\n", (int)(pcb->l));
+process.c:  dbprintf ('I', "Before restore interrupt value is 0x%x.\n", (int)CurrentIntrs());
+process.c:  dbprintf ('I', "New interrupt value is 0x%x.\n", (int)CurrentIntrs());
+process.c:  dbprintf('p', "ProcessFork: Copying process name (%s) to pcb\n", name);
+process.c:  dbprintf ('p',
+process.c:    dbprintf ('p', "About to load %s\n", name);
+process.c:    dbprintf ('p', "File %s -> start=0x%08x\n", name, start);
+process.c:    dbprintf ('p', "File %s -> code @ 0x%08x (size=0x%08x)\n", name, codeS,
+process.c:    dbprintf ('p', "File %s -> data @ 0x%08x (size=0x%08x)\n", name, dataS,
+process.c:      dbprintf ('p', "Placing %d bytes at vaddr %08x.\n", n, addr - n);
+process.c:    dbprintf ('p', "Setting currentPCB=0x%x, stackframe=0x%x\n", (int)pcb, (int)(pcb->currentSavedFrame));
+process.c:  dbprintf ('p', "Leaving ProcessFork (%s)\n", name);
+process.c:  dbprintf ('p', "ProcessFork (%d): function complete\n", GetCurrentPid());
+process.c:    dbprintf ('f', "ProcessGetCodeInfo: open of %s failed (%d).\n",
+process.c:  dbprintf ('f', "File descriptor is now %d.\n", fd);
+process.c:    dbprintf ('f', "ProcessGetCodeInfo: read got %d (not %d) bytes from %s\n",
+process.c:    dbprintf ('f', "ProcessGetCodeInfo: %s missing start line (not a DLX executable?)\n", file);
+process.c:  dbprintf ('f', "Got %d bytes at offset %d ...", nbytes, seekpos);
+process.c:  dbprintf ('f', " terminated at %d.\n", nbytes);
+process.c:  dbprintf ('f', "Buffer is '%s'\n", localbuf);
+process.c:      dbprintf ('f', "New address is 0x%x.\n", (int)(*addr));
+process.c:  dbprintf ('f', "Seeking to %d and returning %d bytes!\n",
+process.c:  dbprintf ('i', "About to initialize queues.\n");
+process.c:  dbprintf ('i', "After initializing queues.\n");
+process.c:  dbprintf ('i', "After initializing memory.\n");
+process.c:  dbprintf ('i', "After initializing processes.\n");
+process.c:  dbprintf ('i', "After initializing shared memory.\n");
+process.c:  dbprintf ('i', "After initializing synchronization tools.\n");
+process.c:  dbprintf ('i', "After initializing keyboard.\n");
+process.c:  dbprintf ('i', "VM Descriptor is %d\n", i);
+process.c:    dbprintf('i', "main: Calling process_create with %d parameters\n", numargs);
+process.c:      default: dbprintf('i', "ERROR: number of argument (%d) is not valid!\n", numargs);
+process.c:    dbprintf('i', "No user program passed!\n");
+queue.c:  dbprintf('q', "testfunvoid\n");
+queue.c:  dbprintf('q', "testfuncint\n");
+queue.c:  dbprintf ('q', "Initializing %d links.\n", QUEUE_MAX_LINKS);
+queue.c:  dbprintf('q', "AQueueAllocLink: allocating link\n");
+queue.c:    dbprintf('q', "AQueueAllocLink: no free links!\n");
+queue.c:    dbprintf('q', "AQueueAllocLink: first link in freeLinks is NULL!\n");
+queue.c:  dbprintf('q', "AQueueRemove: removing link\n");
+traps.c:  dbprintf('p', "TrapProcessCreateHandler: function started\n");
+traps.c:    dbprintf('p', "TrapProcessCreateHandler: creating user process\n");
+traps.c:    dbprintf('p', "TrapProcessCreateHandler: just parsed executable name (%s) from trapArgs\n", name);
+traps.c:  dbprintf ('t',"Interrupt cause=0x%x iar=0x%x isr=0x%x args=0x%08x.\n",
+traps.c:      dbprintf ('t', "Got a context switch trap!\n");
+traps.c:      dbprintf ('t', "Got an exit trap!\n");
+traps.c:      dbprintf ('t', "Got a fork trap!\n");
+traps.c:      dbprintf ('t', "Got a process sleep trap!\n");
+traps.c:      dbprintf ('t', "Got a printf trap!\n");
+traps.c:      dbprintf ('t', "Got a timer interrupt!\n");
+traps.c:  dbprintf ('t',"About to return from dointerrupt.\n");

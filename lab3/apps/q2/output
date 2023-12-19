@@ -1,0 +1,123 @@
+cd ../../bin; dlxsim -D b -x os.dlx.obj -a -u makeprocs.dlx.obj 3 3; ee469_fixterminal
+setting debug flag b
+Stack=0x1fffc0, pc starting at 0x11518
+Got 4 arguments.
+Available memory: 0x20890 -> 0x200000.
+Argument count is 4.
+Argument 0 is -u.
+Argument 1 is makeprocs.dlx.obj.
+Argument 2 is 3.
+Argument 3 is 3.
+Number of processes to generate: 9
+0 1 2 3
+Producing 3 s2
+Producing 3 co
+Reaction 1 carrying out 3 times
+Reaction 2 carrying out 0 times
+Reaction 3 carrying out 0 times
+argc: 4
+Sending
+handle 0
+Pre insert
+Post insert
+S2
+Producer Exit
+argc: 4
+Sending
+handle 0
+Pre insert
+S2
+Post insert
+S2
+S2
+Producer Exit
+argc: 5
+Receiving
+Received
+Sending
+handle 3
+Pre insert
+Post insert
+S
+Sending
+handle 3
+Pre insert
+S
+Post insert
+S
+S
+S2 -> S + S
+argc: 5
+Receiving
+Received
+Sending
+handle 3
+Pre insert
+S
+S
+Post insert
+S
+S
+S
+Sending
+handle 3
+Pre insert
+S
+S
+S
+Post insert
+S
+S
+S
+S
+S2 -> S + S
+Consumer Exit
+argc: 5
+Receiving
+Waiting
+Received
+Sending
+handle 3
+Pre insert
+S
+S
+S
+S
+Post insert
+S
+S
+S
+S
+S
+Sending
+handle 3
+Pre insert
+S
+S
+S
+S
+S
+Post insert
+S
+S
+S
+S
+S
+S
+ÿÿÿÿ -> S + S
+Consumer Exit
+argc: 4
+Sending
+handle 0
+Pre insert
+Post insert
+S2
+Producer Exit
+Consumer Exit
+FATAL ERROR: no runnable processes, but there are sleeping processes waiting!
+Sleeping process 0: PID = 31
+Exiting at program request.
+Instructions executed: 22357950
+Time simulated: 22.358 secs
+Real time elapsed: 1.185 secs
+Execution rate: 18.86M simulated instructions per real second.

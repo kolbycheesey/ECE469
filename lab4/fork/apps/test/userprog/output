@@ -1,0 +1,87 @@
+cd ../; make run
+make[1]: Entering directory `/tmp/shi428/ee469/lab4/one-level/apps/test'
+cd ../../bin; dlxsim -x os.dlx.obj -a -u userprog.dlx.obj 1; ee469_fixterminal
+Stack=0x1fffc8, pc starting at 0x11810
+Got 3 arguments.
+Available memory: 0x213c0 -> 0x200000.
+Argument count is 3.
+Argument 0 is -u.
+Argument 1 is userprog.dlx.obj.
+Argument 2 is 1.
+Initializing memory module
+successfully allocated page
+successfully allocated page
+successfully allocated page
+Setting up pte
+successfully allocated page
+Setting up pte
+successfully allocated page
+Setting up pte
+successfully allocated page
+Setting up pte
+Setting up pte
+Memory address translated from 4096 to 151552
+Memory address translated from 4172 to 151628
+Memory address translated from 4252 to 151708
+Memory address translated from 12288 to 159744
+Memory address translated from 4308 to 151764
+Memory address translated from 4384 to 151840
+Memory address translated from 4464 to 151920
+Memory address translated from 4544 to 152000
+Memory address translated from 4624 to 152080
+Memory address translated from 4704 to 152160
+Memory address translated from 4784 to 152240
+Memory address translated from 4864 to 152320
+Memory address translated from 4944 to 152400
+Memory address translated from 5024 to 152480
+Memory address translated from 5104 to 152560
+Memory address translated from 5184 to 152640
+Memory address translated from 5264 to 152720
+Memory address translated from 5344 to 152800
+Memory address translated from 5424 to 152880
+Memory address translated from 5504 to 152960
+Memory address translated from 5584 to 153040
+Memory address translated from 5664 to 153120
+Memory address translated from 5744 to 153200
+Memory address translated from 5824 to 153280
+Memory address translated from 5904 to 153360
+Memory address translated from 5984 to 153440
+Memory address translated from 6064 to 153520
+Memory address translated from 6144 to 153600
+Memory address translated from 6224 to 153680
+Memory address translated from 6304 to 153760
+Memory address translated from 6384 to 153840
+Memory address translated from 6464 to 153920
+Memory address translated from 6544 to 154000
+Memory address translated from 6624 to 154080
+Memory address translated from 6704 to 154160
+Memory address translated from 6784 to 154240
+Memory address translated from 6864 to 154320
+Memory address translated from 6944 to 154400
+Memory address translated from 7024 to 154480
+Memory address translated from 7104 to 154560
+Memory address translated from 7184 to 154640
+Memory address translated from 7264 to 154720
+Memory address translated from 7344 to 154800
+Memory address translated from 7424 to 154880
+Memory address translated from 7504 to 154960
+Memory address translated from 7584 to 155040
+Memory address translated from 7664 to 155120
+Memory address translated from 7744 to 155200
+Memory address translated from 7824 to 155280
+Memory address translated from 7904 to 155360
+Memory address translated from 7984 to 155440
+Memory address translated from 8064 to 155520
+Memory address translated from 8144 to 155600
+Memory address translated from 8192 to 155648
+Setting up pte
+Memory address translated from 1048315 to 143099
+Memory address translated from 1048299 to 143083
+Process fork complete
+Exiting after illegal access at iar=0x10d4, isr=0x100
+Exiting at program request.
+Instructions executed: 2870270
+Time simulated: 2.870 secs
+Real time elapsed: 0.177 secs
+Execution rate: 16.23M simulated instructions per real second.
+make[1]: Leaving directory `/tmp/shi428/ee469/lab4/one-level/apps/test'

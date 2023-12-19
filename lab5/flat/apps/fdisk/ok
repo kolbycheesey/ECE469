@@ -1,0 +1,61 @@
+cd ../../os; make; cd ../bin; dlxsim -x os.dlx.obj -a -D F -u fdisk.dlx.obj; ee469_fixterminal
+make[1]: Entering directory `/tmp/shi428/ee469/lab5/flat/os'
+make[1]: Nothing to be done for `default'.
+make[1]: Leaving directory `/tmp/shi428/ee469/lab5/flat/os'
+Stack=0x1fffc4, pc starting at 0x13ac4
+Got 4 arguments.
+Available memory: 0x26b30 -> 0x200000.
+Argument count is 4.
+Argument 0 is -D.
+Argument 1 is F.
+Argument 2 is -u.
+Argument 3 is fdisk.dlx.obj.
+DfsModuleInit start.
+Starting DfsOpenFileSystem.
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Finishing intialization in dfs.
+1 0 0 0 0 0
+Got an unrecognized system interrupt (0x4) - exiting!
+GracefulExit: closing filesystem and exiting simulator
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 1...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 2...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 3...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 4...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 5...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 6...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 7...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 8...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 9...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 10...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 11...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 12...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 13...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 14...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 15...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 16...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 17...
+hold: 0, bytesPerBlock: 512 blocksize: 0
+Writing DFS blocknum 18...
+Exiting at program request.
+Instructions executed: 10054647
+Time simulated: 10.055 secs
+Real time elapsed: 1.066 secs
+Execution rate: 9.43M simulated instructions per real second.

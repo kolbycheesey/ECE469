@@ -1,0 +1,79 @@
+cd ../../bin; dlxsim -D b -x os.dlx.obj -a -u makeprocs.dlx.obj 3 4; ee469_fixterminal
+setting debug flag b
+Stack=0x1fffc0, pc starting at 0x11da8
+Got 4 arguments.
+Available memory: 0x21bc8 -> 0x200000.
+Argument count is 4.
+Argument 0 is -u.
+Argument 1 is makeprocs.dlx.obj.
+Argument 2 is 3.
+Argument 3 is 4.
+Number of processes to generate: 12
+0 1 2 3
+Producing 3 s2
+Producing 4 co
+Reaction 1 carrying out 3 times
+Producer PID: 30
+handle 0
+Sending S2ÿÿ
+S2
+Producer PID: 28
+handle 0
+Sending S2ÿÿ
+S2
+S2
+Producer PID: 26
+handle 1
+Sending COÿÿ
+CO
+Producer PID: 24
+handle 1
+Sending COÿÿ
+CO
+CO
+Reaction 2 carrying out 1 times
+Reaction 3 carrying out 1 times
+Producer PID: 27
+handle 1
+Sending COÿÿ
+CO
+CO
+CO
+Consumer PID: 23
+Reaction 1
+handle 0
+CO
+CO
+Receiving CO
+handle 3
+Sending SO
+S
+handle 3
+Sending SO
+S
+S
+CO -> S + S
+Consumer PID: 21
+Reaction 1
+handle 0
+CO
+Receiving CO
+handle 3
+Sending SO
+S
+S
+S
+handle 3
+Sending SO
+S
+S
+S
+S
+CO -> S + S
+Consumer PID: 19
+Exiting after illegal access at iar=0x1a7c, isr=0x100
+Exiting at program request.
+Instructions executed: 41687028
+Time simulated: 41.687 secs
+Real time elapsed: 2.375 secs
+Execution rate: 17.55M simulated instructions per real second.

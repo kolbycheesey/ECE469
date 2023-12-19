@@ -1,0 +1,113 @@
+cd ../../bin; dlxsim -x os.dlx.obj -a -u userprog.dlx.obj 1 3; ee469_fixterminal
+Stack=0x1fffc0, pc starting at 0x1293c
+Got 4 arguments.
+Available memory: 0x23238 -> 0x200000.
+Argument count is 4.
+Argument 0 is -u.
+Argument 1 is userprog.dlx.obj.
+Argument 2 is 1.
+Argument 3 is 3.
+Entering malloc
+node created
+node created
+node created
+node created
+node created
+node created
+node created
+Allocated the block: order = 0, addr = 16384, requested mem size 32, block size = 32
+Created a left child node (order = 0, addr = 16384, size = 32) of parent (order = 1, addr = 16384, size 64
+Created a left child node (order = 1, addr = 16384, size = 64) of parent (order = 2, addr = 16384, size 128
+Created a left child node (order = 2, addr = 16384, size = 128) of parent (order = 3, addr = 16384, size 256
+Created a left child node (order = 3, addr = 16384, size = 256) of parent (order = 4, addr = 16384, size 512
+Created a left child node (order = 4, addr = 16384, size = 512) of parent (order = 5, addr = 16384, size 1024
+Created a left child node (order = 5, addr = 16384, size = 1024) of parent (order = 6, addr = 16384, size 2048
+Created a left child node (order = 6, addr = 16384, size = 2048) of parent (order = 7, addr = 16384, size 4096
+16384
+Freed the block: order = 0, addr = 16384, size = 32
+Coalesced buddy nodes (order = 0, addr = 16384, size = 32) & (order = 0, addr = 16416, size = 32) into the parent node (order = 1, addr = 16384, size = 64)
+Coalesced buddy nodes (order = 1, addr = 16384, size = 64) & (order = 1, addr = 16448, size = 64) into the parent node (order = 2, addr = 16384, size = 128)
+Coalesced buddy nodes (order = 2, addr = 16384, size = 128) & (order = 2, addr = 16512, size = 128) into the parent node (order = 3, addr = 16384, size = 256)
+Coalesced buddy nodes (order = 3, addr = 16384, size = 256) & (order = 3, addr = 16640, size = 256) into the parent node (order = 4, addr = 16384, size = 512)
+Coalesced buddy nodes (order = 4, addr = 16384, size = 512) & (order = 4, addr = 16896, size = 512) into the parent node (order = 5, addr = 16384, size = 1024)
+Coalesced buddy nodes (order = 5, addr = 16384, size = 1024) & (order = 5, addr = 17408, size = 1024) into the parent node (order = 6, addr = 16384, size = 2048)
+Coalesced buddy nodes (order = 6, addr = 16384, size = 2048) & (order = 6, addr = 18432, size = 2048) into the parent node (order = 7, addr = 16384, size = 4096)
+Entering malloc
+node created
+node created
+node created
+node created
+node created
+node created
+Allocated the block: order = 1, addr = 16384, requested mem size 40, block size = 64
+Created a left child node (order = 1, addr = 16384, size = 64) of parent (order = 2, addr = 16384, size 128
+Created a left child node (order = 2, addr = 16384, size = 128) of parent (order = 3, addr = 16384, size 256
+Created a left child node (order = 3, addr = 16384, size = 256) of parent (order = 4, addr = 16384, size 512
+Created a left child node (order = 4, addr = 16384, size = 512) of parent (order = 5, addr = 16384, size 1024
+Created a left child node (order = 5, addr = 16384, size = 1024) of parent (order = 6, addr = 16384, size 2048
+Created a left child node (order = 6, addr = 16384, size = 2048) of parent (order = 7, addr = 16384, size 4096
+Entering malloc
+Already used
+Allocated the block: order = 1, addr = 16448, requested mem size 35, block size = 64
+Created a right child node (order = 1, addr = 16448, size = 64) of parent (order = 2, addr = 16384, size 128
+Created a left child node (order = 2, addr = 16384, size = 128) of parent (order = 3, addr = 16384, size 256
+Created a left child node (order = 3, addr = 16384, size = 256) of parent (order = 4, addr = 16384, size 512
+Created a left child node (order = 4, addr = 16384, size = 512) of parent (order = 5, addr = 16384, size 1024
+Created a left child node (order = 5, addr = 16384, size = 1024) of parent (order = 6, addr = 16384, size 2048
+Created a left child node (order = 6, addr = 16384, size = 2048) of parent (order = 7, addr = 16384, size 4096
+Entering malloc
+Leaf node
+Leaf node
+node created
+node created
+Allocated the block: order = 0, addr = 16512, requested mem size 32, block size = 32
+Created a left child node (order = 0, addr = 16512, size = 32) of parent (order = 1, addr = 16512, size 64
+Created a left child node (order = 1, addr = 16512, size = 64) of parent (order = 2, addr = 16512, size 128
+Created a right child node (order = 2, addr = 16512, size = 128) of parent (order = 3, addr = 16384, size 256
+Created a left child node (order = 3, addr = 16384, size = 256) of parent (order = 4, addr = 16384, size 512
+Created a left child node (order = 4, addr = 16384, size = 512) of parent (order = 5, addr = 16384, size 1024
+Created a left child node (order = 5, addr = 16384, size = 1024) of parent (order = 6, addr = 16384, size 2048
+Created a left child node (order = 6, addr = 16384, size = 2048) of parent (order = 7, addr = 16384, size 4096
+Entering malloc
+Leaf node
+Leaf node
+Already used
+Allocated the block: order = 0, addr = 16544, requested mem size 32, block size = 32
+Created a right child node (order = 0, addr = 16544, size = 32) of parent (order = 1, addr = 16512, size 64
+Created a left child node (order = 1, addr = 16512, size = 64) of parent (order = 2, addr = 16512, size 128
+Created a right child node (order = 2, addr = 16512, size = 128) of parent (order = 3, addr = 16384, size 256
+Created a left child node (order = 3, addr = 16384, size = 256) of parent (order = 4, addr = 16384, size 512
+Created a left child node (order = 4, addr = 16384, size = 512) of parent (order = 5, addr = 16384, size 1024
+Created a left child node (order = 5, addr = 16384, size = 1024) of parent (order = 6, addr = 16384, size 2048
+Created a left child node (order = 6, addr = 16384, size = 2048) of parent (order = 7, addr = 16384, size 4096
+Freed the block: order = 1, addr = 16384, size = 64
+right child
+fail 18432 32
+Coalesced buddy nodes (order = 0, addr = 18432, size = 32) & (order = 0, addr = 18464, size = 32) into the parent node (order = 1, addr = 18432, size = 64)
+Coalesced buddy nodes (order = 1, addr = 18432, size = 64) & (order = 1, addr = 18496, size = 64) into the parent node (order = 2, addr = 18432, size = 128)
+Coalesced buddy nodes (order = 2, addr = 18432, size = 128) & (order = 2, addr = 18560, size = 128) into the parent node (order = 3, addr = 18432, size = 256)
+Coalesced buddy nodes (order = 3, addr = 18432, size = 256) & (order = 3, addr = 18688, size = 256) into the parent node (order = 4, addr = 18432, size = 512)
+Coalesced buddy nodes (order = 4, addr = 18432, size = 512) & (order = 4, addr = 18944, size = 512) into the parent node (order = 5, addr = 18432, size = 1024)
+Coalesced buddy nodes (order = 5, addr = 18432, size = 1024) & (order = 5, addr = 19456, size = 1024) into the parent node (order = 6, addr = 18432, size = 2048)
+right child
+fail 18432 32
+Coalesced buddy nodes (order = 0, addr = 18432, size = 32) & (order = 0, addr = 18464, size = 32) into the parent node (order = 1, addr = 18432, size = 64)
+Coalesced buddy nodes (order = 1, addr = 18432, size = 64) & (order = 1, addr = 18496, size = 64) into the parent node (order = 2, addr = 18432, size = 128)
+Coalesced buddy nodes (order = 2, addr = 18432, size = 128) & (order = 2, addr = 18560, size = 128) into the parent node (order = 3, addr = 18432, size = 256)
+Coalesced buddy nodes (order = 3, addr = 18432, size = 256) & (order = 3, addr = 18688, size = 256) into the parent node (order = 4, addr = 18432, size = 512)
+Coalesced buddy nodes (order = 4, addr = 18432, size = 512) & (order = 4, addr = 18944, size = 512) into the parent node (order = 5, addr = 18432, size = 1024)
+Coalesced buddy nodes (order = 5, addr = 18432, size = 1024) & (order = 5, addr = 19456, size = 1024) into the parent node (order = 6, addr = 18432, size = 2048)
+right child
+fail 18432 32
+Coalesced buddy nodes (order = 0, addr = 18432, size = 32) & (order = 0, addr = 18464, size = 32) into the parent node (order = 1, addr = 18432, size = 64)
+Coalesced buddy nodes (order = 1, addr = 18432, size = 64) & (order = 1, addr = 18496, size = 64) into the parent node (order = 2, addr = 18432, size = 128)
+Coalesced buddy nodes (order = 2, addr = 18432, size = 128) & (order = 2, addr = 18560, size = 128) into the parent node (order = 3, addr = 18432, size = 256)
+Coalesced buddy nodes (order = 3, addr = 18432, size = 256) & (order = 3, addr = 18688, size = 256) into the parent node (order = 4, addr = 18432, size = 512)
+Coalesced buddy nodes (order = 4, addr = 18432, size = 512) & (order = 4, addr = 18944, size = 512) into the parent node (order = 5, addr = 18432, size = 1024)
+Coalesced buddy nodes (order = 5, addr = 18432, size = 1024) & (order = 5, addr = 19456, size = 1024) into the parent node (order = 6, addr = 18432, size = 2048)
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 3010982
+Time simulated: 3.011 secs
+Real time elapsed: 0.347 secs
+Execution rate: 8.68M simulated instructions per real second.

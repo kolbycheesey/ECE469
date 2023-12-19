@@ -1,0 +1,22 @@
+Reactions:
+1. S2 -> S + S
+2. 4 CO -> 2 O2 + 2 C2
+3. S + 2 O2 -> SO4
+
+Args: 
+1. # of S2
+2. # of CO
+
+* Precalculate the number of reactions per reaction type
+
+* Consumers = reactions
+* Producers = generators
+
+Producers will only send using mailboxes
+Consumers will receive messages, and check to see if the criteria is met for that reaction, before sending messages again.
+
+note: generators for C2 and SO4 are not needed.
+
+numprocs = S2 + 2 * S2 + CO / 4 + CO / 4 + min(2 * S2, CO / 4)
+
+open mailboxes in makeprocs

@@ -1,0 +1,1 @@
+work/q2.o: q2.c ../../../include/usertraps.h ../../../include/misc.h

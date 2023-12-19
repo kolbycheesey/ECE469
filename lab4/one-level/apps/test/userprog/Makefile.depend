@@ -1,0 +1,2 @@
+work/userprog.o: userprog.c ../../../include/usertraps.h \
+ ../../../include/misc.h
